@@ -1,5 +1,26 @@
 "use strict";
 
+// Define default variables
+if (typeof defaultAppsCount == 'undefined') { var defaultAppsCount = 10; }
+if (typeof defaultUsersCount == 'undefined') { var defaultUsersCount = 1500; }
+if (typeof defaultIndustry == 'undefined') { var defaultIndustry = 1; } // Default industry here should match the default value selected in the form.
+
+if (typeof colorProvisioning == 'undefined') { var colorProvisioning = "#753BBD"; }
+var textProvisioning = "Access Provisioning";
+var descProvisioning = "Speed provisioning with automated approvals based on user roles.";
+
+if (typeof colorRequests == 'undefined') { var colorRequests = "#F2A900"; }
+var textRequests = "Access Requests";
+var descRequests = "Move to self-service for faster access to applications and data.";
+
+if (typeof colorPasswordResets == 'undefined') { var colorPasswordResets = "#00B5E2"; }
+var textPasswordResets = "Password Resets";
+var descPasswordResets = "Empower users by shifting from IT helpdesk to self-service.";
+
+if (typeof colorCertification == 'undefined') { var colorCertification = "#00B140"; }
+var textCertification = "Access Certification";
+var descCertification = "Automate access certification of all users — including bots.";
+
 function _instanceof(left, right) { if (right != null && typeof Symbol !== "undefined" && right[Symbol.hasInstance]) { return !!right[Symbol.hasInstance](left); } else { return left instanceof right; } }
 function _classCallCheck(instance, Constructor) { if (!_instanceof(instance, Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
@@ -300,14 +321,14 @@ jQuery(document).ready(function ($) {
         range: "max",
         min: 500,
         max: 10000,
+        step: 100,
         value: c.usersCount,
         slide: function slide(event, ui) {
-            var usersRounded = Math.round(ui.value / 100) * 100;
-            jQuery("input#users").val(usersRounded.toLocaleString('en', {
+            jQuery("input#users").val(ui.value.toLocaleString('en', {
                     useGrouping: true
                 }) // adds commas like 1,500
             );
-            //c.setUsersCount(usersRounded);
+            //c.setUsersCount(ui.value);
         }
     });
     jQuery("input#users").val(c.usersCount.toLocaleString('en', {
@@ -332,8 +353,7 @@ jQuery(document).ready(function ($) {
 
     jQuery("#calculateSavings").on("click", function(event) {
         event.preventDefault();
-        var usersRounded = Math.round( parseInt(jQuery("input#users").val().replace(',','')) / 100) * 100;
-        c.setUsersCount( usersRounded ) ;
+        c.setUsersCount( parseInt( jQuery("input#users").val().replace(',','') ) );
         c.setAppsCount( jQuery("input#apps").val() );
         c.setIndustry( jQuery("select#industry").val() );
     });
