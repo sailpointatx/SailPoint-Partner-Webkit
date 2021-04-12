@@ -1,3 +1,36 @@
+<?php
+    // Default values for customizable settings
+    $defaultAppsCount = 20;
+    $defaultUsersCount = 5000;
+    $defaultIndustry = 1;
+    $colorProvisioning = "#753BBD";
+    $colorRequests = "#F2A900";
+    $colorPasswordResets = "#00B5E2";
+    $colorCertification = "#00B140";
+
+    // Set values from url parameters if they exist
+    if ( isset($_GET["appsCount"]) ) {
+        $defaultAppsCount = trim($_GET["appsCount"]);
+    }
+    if ( isset($_GET["usersCount"]) ) {
+        $defaultUsersCount = trim($_GET["usersCount"]);
+    }
+    if ( isset($_GET["industry"]) ) {
+        $defaultIndustry = trim($_GET["industry"]);
+    }
+    if ( isset($_GET["colorProv"]) ) {
+        $colorProvisioning = "#" . trim($_GET["colorProv"]);
+    }
+    if ( isset($_GET["colorReq"]) ) {
+        $colorRequests = "#" . trim($_GET["colorReq"]);
+    }
+    if ( isset($_GET["colorPwResets"]) ) {
+        $colorPasswordResets = "#" . trim($_GET["colorPwResets"]);
+    }
+    if ( isset($_GET["colorCert"]) ) {
+        $colorCertification = "#" . trim($_GET["colorCert"]);
+    }
+?>
 <html lang="en-US">
     <head>
         <title>Identity Value Calculator</title>
@@ -89,13 +122,13 @@
 
         <!-- Calculator configuration -->
         <script>
-            var defaultAppsCount = 20;
-            var defaultUsersCount = 5000;
-            var defaultIndustry = 1;
-            var colorProvisioning = "#753BBD";
-            var colorRequests = "#F2A900";
-            var colorPasswordResets = "#00B5E2";
-            var colorCertification = "#00B140";
+            var defaultAppsCount = <?php echo $defaultAppsCount; ?>
+            var defaultUsersCount = <?php echo $defaultUsersCount; ?>
+            var defaultIndustry = <?php echo $defaultIndustry; ?>
+            var colorProvisioning = "<?php echo $colorProvisioning; ?>"
+            var colorRequests = "<?php echo $colorRequests; ?>"
+            var colorPasswordResets = "<?php echo $colorPasswordResets; ?>"
+            var colorCertification = "<?php echo $colorCertification; ?>"
         </script>
         <script src="./scripts/calculator.calcROI.js"></script>
 
