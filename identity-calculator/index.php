@@ -33,12 +33,12 @@
 ?>
 <html lang="en-US">
     <head>
-        <title>Identity Value Calculator</title>
+        <title>SailPoint Identity Value Calculator</title>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
 
         <link rel="stylesheet" href="./styles/jquery-ui.css" />
-        <link rel="stylesheet" href="./styles/calculator.css" />
+        <link rel="stylesheet" href="./styles/sailpoint-calculator.css" />
     </head>
     <body>
         <div class="container-fluid">
@@ -116,9 +116,7 @@
         <!-- Required JS libraries -->
         <script src="./scripts/jquery.min.js"></script>
         <script src="./scripts/jquery-ui.min.js"></script>
-        <script src="./scripts/amcharts4.core.js"></script>
-        <script src="./scripts/amcharts4.charts.js"></script>
-        <script src="./scripts/amcharts4.animated.js"></script>
+        <script src="./scripts/amcharts4.js"></script>
 
         <!-- Calculator configuration -->
         <script>
@@ -130,7 +128,7 @@
             var colorPasswordResets = "<?php echo $colorPasswordResets; ?>"
             var colorCertification = "<?php echo $colorCertification; ?>"
         </script>
-        <script src="./scripts/calculator.calcROI.js"></script>
+        <script src="./scripts/sailpoint-calculator.js"></script>
 
     </body>
 </html>

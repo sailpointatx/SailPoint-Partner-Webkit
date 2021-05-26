@@ -8,11 +8,11 @@
 			html, body { margin: 0; padding: 0; }
 		</style>
 		<link rel="stylesheet" href="./styles/jquery-ui.css" />
-		<link rel="stylesheet" href="./styles/calculator.css" />
-		<link rel="stylesheet" href="./styles/sailpoint-webkit.css" />
+		<link rel="stylesheet" href="./styles/sailpoint-webkit-calculator.min.css" />
 	</head>
 	<body>
-		<div class="sp-partnerwebkit">
+
+		<div id="sp-partnerwebkit" class="sp-partnerwebkit">
 			<div class="sp-pw-header-bkg" style="background-image: url('./images/sp-dot-pattern.svg');"></div>
 			<div class="sp-pw-header">
 				<div class="sp-container-fluid">
@@ -21,6 +21,8 @@
 			</div>
 			<div class="sp-pw-body">
 				<div class="sp-container-fluid">
+
+					<!-- Begin Page Content -->
 					<div class="sp-pw-card">
 						<div class="sp-row">
 							<div class="sp-col-08 sp-pw-card-intro">
@@ -71,11 +73,9 @@
 							</ul>
 							<p>Learn more how the <a href="#">SailPoint Identity Platform</a> can help enable user access and protect your business everywhere.</p>
 
-
 							<h2>The [Partner Name] and SailPoint Solution</h2>
 							<p>Putting identity at the center of your IT infrastructure is the key to strong security and compliance. [Partner Name] is proud to be a [Type & Level] partner of SailPoint, with a proven history of successful identity security implementations.</p>
 							<p>[Partner adds more details here]</p>
-
 
 							<h2>Rapid Implementation and Fast Time to Value</h2>
 							<p>SailPoint brings out the best in identity security for the cloud enterprise so customers can bring out the best in their business.</p>
@@ -89,7 +89,9 @@
 							</ul>
 						</div>
 					</div>
+					<!-- End Page Content -->
 
+					<!-- Begin Calculator -->
 					<div class="calculator-container calc-row">
 						<div class="col-sm-12 col-md-5">
 							<div class="input-panel">
@@ -135,7 +137,7 @@
 									</select>
 								</div>
 								<div class="text-center see-savings-container">
-									<button id="calculateSavings" class="btn btn--purple">See your estimated savings</button>
+									<button id="calculateSavings" class="sp-btn sp-btn--purple">See your estimated savings</button>
 								</div>
 							</div>    
 						</div>
@@ -157,27 +159,9 @@
 							</div>    
 						</div>
 					</div>
-
-					<!-- Required JS libraries -->
-					<script src="./scripts/jquery.min.js"></script>
-					<script src="./scripts/jquery-ui.min.js"></script>
-					<script src="./scripts/amcharts4.core.js"></script>
-					<script src="./scripts/amcharts4.charts.js"></script>
-					<script src="./scripts/amcharts4.animated.js"></script>
-
-					<!-- Calculator configuration -->
-					<script>
-						var defaultAppsCount = 20
-						var defaultUsersCount = 5000
-						var defaultIndustry = 1
-						var colorProvisioning = "#753BBD"
-						var colorRequests = "#F2A900"
-						var colorPasswordResets = "#00B5E2"
-						var colorCertification = "#00B140"
-					</script>
-					<script src="./scripts/calculator.calcROI.js"></script>
-
+					<!-- End Calculator -->
 		
+					<!-- Begin Page Content -->
 					<div class="sp-row">
 						<div class="sp-col-12">
 							<h2>Unparalleled Customer Success</h2>
@@ -189,13 +173,13 @@
 							</ul>
 							<p>[Partner can add more details here]</p>
 
-
 							<h2>Accelerate Business and Reduce Risk: Contact Us Today</h2>
 							<p>Take the next step toward improving and securing your enterprise. Contact [Partner Name] today to set up a value-based discovery call so we can understand your goals and create a blueprint for success. Learn more about expected ROI, talk to other customers, and get specific information about how the solution works.</p>
 						</div>
 					</div>
+					<!-- End Page Content -->
 
-
+					<!-- Begin Contact Form -->
 					<div class="sp-pw-card sp-pw-contact-form">
 						<form action="#" method="post">
 							<div class="sp-row">
@@ -503,10 +487,29 @@
 							</div>
 						</form>
 					</div>
+					<!-- End Contact Form -->
 
 				</div>
 			</div>
 		</div>
+
+		<!-- Calculator - required JS libraries -->
+		<script src="./scripts/jquery.min.js"></script>
+		<script src="./scripts/jquery-ui.min.js"></script>
+		<script src="./scripts/amcharts4.js"></script>
+
+		<!-- Calculator configuration -->
+		<script>
+			var defaultAppsCount = 20;
+			var defaultUsersCount = 5000;
+			var defaultIndustry = 1;
+			var colorProvisioning = "#753BBD";
+			var colorRequests = "#F2A900";
+			var colorPasswordResets = "#00B5E2";
+			var colorCertification = "#00B140";
+		</script>
+		<script src="./scripts/sailpoint-calculator.js"></script>
+		<!-- End Calculator scripts -->
 
 	</body>
 </html>
