@@ -6,7 +6,10 @@ For the version of the webkit without the identity value calculator, please acce
 
 Images such as the SailPoint logo and icons can be found in: `/partner-webkit/images/`.
 
-The only external file required is `/partner-webkit/styles/sailpoint-webkit.min.css`.
+External CSS files required include:
+- `/partner-webkit/styles/sailpoint-webkit.min.css`.
+
+Development versions of the CSS files (not minified) are located in `/partner-webkit/styles/development/`. These do not need to be included, they are only there in case you would like to do customizations to the existing styles.
 
 &nbsp;  
 
@@ -19,6 +22,8 @@ Images such as the SailPoint logo and icons can be found in: `/partner-webkit-ca
 External CSS files required include:
 - `/partner-webkit-calculator/styles/sailpoint-webkit-calculator.min.css`
 - `/partner-webkit-calculator/styles/jquery-ui.css`
+
+Development versions of the CSS files (not minified) are located in `/partner-webkit-calculator/styles/development/`. These do not need to be included, they are only there in case you would like to do customizations to the existing styles.
 
 External Javascript files required include:
 - `/partner-webkit-calculator/scripts/sailpoint-calculator.js`
