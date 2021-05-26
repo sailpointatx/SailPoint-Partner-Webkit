@@ -30,24 +30,24 @@ The calculator can be configured with the following variables to customize the d
 - *defaultAppsCount*     (default applications count, integer, range 5-50)
 - *defaultUsersCount*    (default users count, integer, range 500-10000)
 - *defaultIndustry*      (default industry, integer, range 1-18)
-    1. Banking
-    2. Biotechnology & Pharma
-    3. Construction & Building
-    4. Consulting & Services
-    5. Education
-    6. Entertainment & Media
-    7. Federal Government
-    8. Finance
-    9. Healthcare
-    10. Insurance
-    11. Manufacturing & Wholesale
-    12. NPO's & Associations
-    13. Oil & Gas & Energy
-    14. Other
-    15. Retail & Consumer
-    16. Software/Internet/Technology
-    17. Transportation
-    18. Utilities
+    - 1 - Banking
+    - 2 - Biotechnology & Pharma
+    - 3 - Construction & Building
+    - 4 - Consulting & Services
+    - 5 - Education
+    - 6 - Entertainment & Media
+    - 7 - Federal Government
+    - 8 - Finance
+    - 9 - Healthcare
+    - 10 - Insurance
+    - 11 - Manufacturing & Wholesale
+    - 12 - NPO's & Associations
+    - 13 - Oil & Gas & Energy
+    - 14 - Other
+    - 15 - Retail & Consumer
+    - 16 - Software/Internet/Technology
+    - 17 - Transportation
+    - 18 - Utilities
 - *colorProvisioning*    (provisioning chart color, hex code)
 - *colorRequests*        (access requests chart color, hex code)
 - *colorPasswordResets*  (password resets chart color, hex code)
