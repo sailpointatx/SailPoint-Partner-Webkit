@@ -1,5 +1,12 @@
 # SailPoint Partner Webkit with Embeddable Identity Value Calculator
 
+## Table of Contents
+- <a href="#sailpoint-partner-webkit-no-calculator">SailPoint Partner Webkit (no calculator)</a>
+- <a href="#sailpoint-partner-webkit-with-identity-value-calculator">SailPoint Partner Webkit with Identity Value Calculator</a>
+- <a href="#sailpoint-partner-webpage-content-template">SailPoint Partner Webpage Content Template</a>
+
+&nbsp;  
+
 ## SailPoint Partner Webkit (no calculator)
 
 For the version of the webkit without the identity value calculator, please access the `/partner-webkit/index.html` file. The code is self contained within the DIV with an ID of `sp-partnerwebkit`.
@@ -57,3 +64,9 @@ The calculator can be configured with the following variables to customize the d
 - *colorRequests*        (access requests chart color, hex code)
 - *colorPasswordResets*  (password resets chart color, hex code)
 - *colorCertification*   (certifications chart color, hex code)
+
+&nbsp;  
+
+## SailPoint Partner Webpage Content Template
+
+We have provided the same content that is in the HTML documents in Word document form: `SailPoint Partner Webpage Content Template_021721.docx`. It also includes image assets and recommended SEO Meta Data for the webpage.
