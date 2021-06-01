@@ -69,4 +69,7 @@ The calculator can be configured with the following variables to customize the d
 
 ## SailPoint Partner Webpage Content Template
 
-We have provided the same content that is in the HTML documents in Word document form: `SailPoint Partner Webpage Content Template_021721.docx`. It also includes image assets and recommended SEO Meta Data for the webpage.
+We have provided the same content that is in the HTML documents in Word document form. They also include image assets and recommended SEO Meta Data for the webpage. We have several versions to choose from, depending on the region of the partner.
+
+- `SailPoint Partner Webpage Content Template_021721.docx` - Americas based Partner
+- `SailPoint Partner Webpage Content Template_021721_QueensEnglish.docx` - EMEA based Partner
